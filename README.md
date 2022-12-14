@@ -11,7 +11,13 @@ To reproduce the final submission, copy `train.csv` and `test.csv` into the `dat
 pip install -r requirements.txt
 ```
 
-Afterwards, you can run all the cells in the provided Jupyter Notebook `main.ipynb` in-order. It will train all the models and produce the final submission. The provided code was tested with Python 3.9.13.
+Afterwards, you can run all the cells in the provided Jupyter Notebook `main.ipynb` in-order. It will train all the models and produce the final submission in a folder called `result`. 
+
+The provided code was tested with Python 3.9.13 and 3.7.12.
+
+## Training Time
+
+On a single Intel Xeon® Gold 6130, it takes approximately 50 minutes to train all three models (combined).
 
 ## Approach
 
@@ -37,3 +43,7 @@ Finally, we ensemble the post-processed outputs of the three models described ab
 ## Deep Learning Approaches
 
 Although not part of our final set of models, we evaluate state-of-the-art deep learning approaches, namely a [Transformer architecture](https://huggingface.co/docs/transformers/model_doc/time_series_transformer), an LSTM network, and a shallow and deep variant of a feed-forward neural network (i.e., a sequence of dense layers). For each architecture, we train a single model that takes the last `k` target values as input (some variants also receive time information as input) and predicts the next `m` values. We experiment with different values of `m, k` and find that all of these models fail to extrapolate the given time series in a meaningful manner. We hypothesize that the reasons are mainly two-fold: (1) Deep learning models require a sufficiently large and diverse data set to perform well, which was problematic for the given training data, and (2) complex models appear to learn the high-frequency random noise in the time series, which is counterproductive when predicting values for multiple weeks into the future.
+
+## Final Note
+
+Due to a bug in the code, we have unfortunately uploaded a unscaled solution as our final submission (i.e., the sum of the targets in each row is not necessarily 3). This has been fixed in this notebook, which is why you will see a difference in the solution file uploaded and the one produced by this notebook.

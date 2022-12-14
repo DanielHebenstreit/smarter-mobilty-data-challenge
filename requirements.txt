@@ -1,0 +1,7 @@
+jupyter
+xgboost
+skforecast
+pandas
+numpy
+matplotlib
+statsmodels
