@@ -46,4 +46,4 @@ Although not part of our final set of models, we evaluate state-of-the-art deep 
 
 ## Final Note
 
-Due to a bug in the code, we have unfortunately uploaded a unscaled solution as our final submission (i.e., the sum of the targets in each row is not necessarily 3). This has been fixed in this notebook, which is why you will see a difference in the solution file uploaded and the one produced by this notebook.
+Due to a bug in the code, we have unfortunately uploaded an unrounded and unscaled solution as our final submission. This has been fixed in this notebook, which is why you will see a difference in the solution file uploaded and the one produced by this notebook.
