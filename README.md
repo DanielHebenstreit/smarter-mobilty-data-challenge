@@ -1,7 +1,7 @@
 # Smarter Mobility Data Challenge
 Group: `charging-boys`
 
-This repository contains our solution to CodaLab's [Smarter Mobility Data Challenge](https://codalab.lisn.upsaclay.fr/competitions/7192).
+The present code is developed during a contest called [Smarter Mobility Data Challenge Manifeste AI](https://codalab.lisn.upsaclay.fr/competitions/7192) organized at the request of Air Liquide, Airbus, EDF, Inria, Michelin, Naval Group, Schlumberger, Thales, TotalEnergies OneTech, Valeo, Renault, Veolia in the context of the Manifest IA consortium and TAILOR consortium.
 
 ## Setup
 
